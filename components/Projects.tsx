@@ -8,7 +8,7 @@ const Projects: React.FC = () => {
       title: 'Quay Về',
       subtitle: 'Hành Trình Của Hoà',
       description: 'Một bộ phim hoạt hình ngắn về ký ức và sự kết nối giữa các thế hệ. Với phong cách vẽ tay truyền thống kết hợp màu nước, "Quay Về" đưa khán giả vào một không gian tĩnh lặng, nơi những kỷ niệm sống lại.',
-      image: 'https://media.discordapp.net/attachments/1438510824275709956/1486280419824504832/Bia.jpg?ex=69c4ee01&is=69c39c81&hm=665abc784ca926f361c280a77293df9221804ad891cce7c93b943a0568a115ab&=&format=webp&width=1200&height=680',
+      image: '/images/project-quay-ve.jpg',
       tag: 'Phim Ngắn Animation'
     },
     {
@@ -16,7 +16,7 @@ const Projects: React.FC = () => {
       title: 'Phép Màu',
       subtitle: 'Hành Trình Tìm Kiếm Phép Màu',
       description: 'Tập truyện kể về một hành trình gian nan cực khổ của hai mẹ con trên con đường tìm kiếm lại ảnh sáng cho người mẹ. Qua góc nhìn của nhân vật con.',
-      image: 'https://media.discordapp.net/attachments/1438510824275709956/1486283151901855856/bia2.jpg?ex=69c4f08d&is=69c39f0d&hm=cf443226d839465684e89650ec6c1ef07143bf4c06f5d5b1e1808ae28b8cc205&=&format=webp&width=1200&height=680',
+      image: '/images/project-phep-mau.jpg',
       tag: 'Truyện Tranh'
     }
   ];

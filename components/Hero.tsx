@@ -50,8 +50,8 @@ const Hero: React.FC = () => {
             <div className="relative z-10 rounded-2xl overflow-hidden shadow-[10px_10px_0px_0px_#1e40af] md:shadow-[15px_15px_0px_0px_#1e40af] border border-blue-100 transition-all duration-500 group-hover:shadow-[5px_5px_0px_0px_#1e40af]">
                <div className="max-w-md mx-auto">
                  <img 
-                   src="https://media.discordapp.net/attachments/1438510824275709956/1486740327837597866/z7661532867840_f09514e076ef041edd57a0949db12fe2.jpg?ex=69c69a54&is=69c548d4&hm=0c2edc8e390776b13e239759cf9099fdfbdda973450400d3db86974ad3248b6d&=&format=webp&width=573&height=810" 
-                   alt="Artistic Animation" 
+                   src="/images/project-quay-ve.png"
+                   alt="Poster Quay Ve" 
                    className="w-auto h-auto object-cover grayscale-[15%] group-hover:grayscale-0 transition-all duration-1000 mx-auto"
                  />
                </div>

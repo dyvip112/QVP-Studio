@@ -14,7 +14,12 @@ const Philosophy: React.FC = () => {
   const [error, setError] = useState<string | null>(null);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+    const nextValue =
+      name === 'phone'
+        ? value.replace(/\D/g, '')
+        : value;
+    setForm({ ...form, [name]: nextValue });
   };
 
   const handleServiceChange = (value: string) => {
@@ -192,6 +197,8 @@ const Philosophy: React.FC = () => {
                 required
                 value={form.phone}
                 onChange={handleChange}
+                inputMode="numeric"
+                maxLength={15}
                 className="w-full rounded-xl border border-blue-100 bg-white px-4 py-3 font-montserrat text-sm focus:outline-none focus:ring-2 focus:ring-[#1e40af]"
                 placeholder="Nhập số điện thoại của bạn"
               />

@@ -5,8 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>QVP STUDIO | Nghệ Thuật Kể Chuyện Bằng Hình Ảnh</title>
-    <link rel="icon" type="image/png" href="https://media.discordapp.net/attachments/1438510824275709956/1482995120700915752/Artboard_10logo.png?ex=69c38655&is=69c234d5&hm=dc2fb9d0b0ece52c1c0c349eda223c71a9db482ec0823eca94db15b2250f2909&=&format=webp&quality=lossless&width=538&height=558" />
-    <link rel="apple-touch-icon" href="https://media.discordapp.net/attachments/1438510824275709956/1482995120700915752/Artboard_10logo.png?ex=69c38655&is=69c234d5&hm=dc2fb9d0b0ece52c1c0c349eda223c71a9db482ec0823eca94db15b2250f2909&=&format=webp&quality=lossless&width=538&height=558" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/qvp-favicon.png?v=2" />
+    <link rel="shortcut icon" href="/images/qvp-favicon.png?v=2" />
+    <link rel="apple-touch-icon" href="/images/qvp-favicon.png?v=2" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Montserrat:wght@600;700;800&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
     <style>
@@ -70,6 +71,23 @@
       /* Cải thiện hiển thị khối text tiêu đề */
       h1 span {
         display: inline-block;
+      }
+
+      .app-scale-shell {
+        width: 100%;
+        overflow-x: hidden;
+      }
+
+      @media (min-width: 1024px) {
+        .app-scale-shell {
+          min-height: 133.333vh;
+        }
+
+        .app-scale-content {
+          width: 133.333333%;
+          transform: scale(0.75);
+          transform-origin: top left;
+        }
       }
     </style>
   <script type="importmap">

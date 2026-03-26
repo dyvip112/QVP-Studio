@@ -7,19 +7,19 @@ const Team: React.FC = () => {
     {
       name: "Trần Văn Quốc",
       role: "Thành Viên",
-      image: "https://media.discordapp.net/attachments/1438510824275709956/1486275855478165605/image.png?ex=69c4e9c1&is=69c39841&hm=fb985eefceb321924fd77b8f35efc49c34935d82397ba2cc4f4315c1df5424c9&=&format=webp&quality=lossless&width=625&height=810",
+      image: "/images/team-tran-van-quoc.jpg",
       bio: "Linh hồn của QVP, người biến những ý tưởng trừu tượng thành những khung hình đầy cảm xúc và sức sống."
     },
    {
       name: "Trần Thiên Phụng",
       role: "Trưởng Nhóm",
-      image: "https://media.discordapp.net/attachments/1438510824275709956/1486276332022399076/image.png?ex=69c4ea33&is=69c398b3&hm=b1e9faf5c744011cf0b7dfb17e716f4c3fd688982aa25a45fff8cc1bf3a0884a&=&format=webp&quality=lossless&width=608&height=810",
+      image: "/images/team-tran-thien-phung.jpg",
       bio: "Nhà điều hành tài ba, giữ cho nhịp đập sáng tạo của studio luôn ổn định và chuyên nghiệp."
     },
     {
       name: "Lê Chí Vĩ",
       role: "Thành Viên",
-      image: "https://media.discordapp.net/attachments/1438510824275709956/1468520825626955959/z7446297221413_68ac1cbf27895b7674c06c786d28cb2d.jpg?ex=69c442d8&is=69c2f158&hm=ad454c35f93f583212b68dba16e0bb55dae51ee3474ad0048f67bac6a8164037&=&format=webp&width=453&height=680",
+      image: "/images/team-le-chi-vi.jpg",
       bio: "Người thổi bừng màu sắc vào thế giới QVP, mang đến sự rạng rỡ và tinh tế trong từng nét vẽ tay."
     },
   ];

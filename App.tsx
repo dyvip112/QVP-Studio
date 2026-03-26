@@ -33,32 +33,34 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <div className="min-h-screen selection:bg-blue-200 selection:text-blue-900">
-      <Navbar activeSection={activeSection} />
-      
-      <main>
-        <section id="home">
-          <Hero />
-        </section>
+    <div className="app-scale-shell">
+      <div className="app-scale-content min-h-screen selection:bg-blue-200 selection:text-blue-900">
+        <Navbar activeSection={activeSection} />
         
-        <section id="projects" className="py-24">
-          <Projects />
-        </section>
-        
-        <section id="sketchbook" className="py-24 bg-stone-100/50">
-          <Sketchbook />
-        </section>
+        <main>
+          <section id="home">
+            <Hero />
+          </section>
+          
+          <section id="projects" className="py-24">
+            <Projects />
+          </section>
+          
+          <section id="sketchbook" className="py-24 bg-stone-100/50">
+            <Sketchbook />
+          </section>
 
-        <section id="team" className="py-24">
-          <Team />
-        </section>
+          <section id="team" className="py-24">
+            <Team />
+          </section>
+          
+          <section id="philosophy" className="py-24 bg-blue-50/30">
+            <Philosophy />
+          </section>
+        </main>
         
-        <section id="philosophy" className="py-24 bg-blue-50/30">
-          <Philosophy />
-        </section>
-      </main>
-      
-      <Footer />
+        <Footer />
+      </div>
     </div>
   );
 };
