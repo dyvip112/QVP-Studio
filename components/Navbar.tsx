@@ -36,10 +36,9 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
           onClick={() => scrollTo('home')}
         >
           <img 
-            src="https://media.discordapp.net/attachments/1294679937348796498/1483738844552630324/Artboard_314x.png?ex=69c19dbb&is=69c04c3b&hm=38e69274d4f6019017fe0b13ad5274304aad7f2c201170b7ce5dd97038b82fb1&=&format=webp&quality=lossless&width=1540&height=590" 
+            src="/images/qvp-logo.png"
             alt="QVP STUDIO Logo" 
             className="h-10 md:h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
-            referrerPolicy="no-referrer"
           />
         </div>
 
