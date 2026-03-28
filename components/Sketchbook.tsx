@@ -40,9 +40,9 @@ const Sketchbook: React.FC = () => {
         </div>
 
         <div className="lg:col-span-7 relative">
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 rotate-3 scale-95 hover:rotate-0 transition-transform duration-700">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
             {sketches.map((img, idx) => (
-              <div key={idx} className={`sketch-border p-2 bg-white shadow-xl ${idx % 2 === 0 ? 'mt-8' : '-mt-4'} hover:-translate-y-4 transition-transform duration-500`}>
+              <div key={idx} className="sketch-border bg-white p-2 shadow-xl transition-transform duration-500 hover:-translate-y-2">
                 <img
                   src={img}
                   alt="sketch"
