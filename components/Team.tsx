@@ -41,11 +41,7 @@ const Team: React.FC = () => {
       <div className="grid md:grid-cols-3 gap-12 lg:gap-20">
         {members.map((member, idx) => (
           <div key={idx} className="group flex flex-col items-center">
-            <div className={`relative mb-10 w-full max-w-[320px] aspect-[3/4] transition-all duration-700 ease-in-out ${
-              idx === 0 ? '-rotate-2 group-hover:rotate-1' : 
-              idx === 1 ? 'rotate-1 group-hover:-rotate-1' : 
-              'rotate-3 group-hover:rotate-0'
-            }`}>
+            <div className="relative mb-10 w-full max-w-[320px] aspect-[3/4] transition-all duration-700 ease-in-out">
               <div className="absolute inset-0 bg-blue-100 translate-x-2 translate-y-2 rounded-sm -z-10 opacity-30"></div>
               <div className="w-full h-full bg-white p-3 shadow-2xl border border-stone-100 flex flex-col">
                 <div className="relative flex-1 overflow-hidden rounded-sm bg-stone-50">
