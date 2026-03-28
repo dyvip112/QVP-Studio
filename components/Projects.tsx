@@ -41,8 +41,10 @@ const Projects: React.FC = () => {
                <div className="overflow-hidden rounded-md aspect-video relative">
                  <img 
                    src={project.image} 
-                   alt={project.title} 
-                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 grayscale-[40%] group-hover:grayscale-0"
+                   alt={project.title}
+                   loading="lazy"
+                   decoding="async"
+                   className="w-full h-full object-cover transition-transform duration-1000 grayscale-[40%] group-hover:scale-105 group-hover:grayscale-0"
                  />
                  <div className="absolute inset-0 bg-stone-900/10 group-hover:bg-transparent transition-colors"></div>
                </div>

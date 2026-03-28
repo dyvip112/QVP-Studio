@@ -3,12 +3,12 @@ import React from 'react';
 
 const Sketchbook: React.FC = () => {
   const sketches = [
-    'https://media.discordapp.net/attachments/1438510824275709956/1486742161331589191/image.png?ex=69c69c09&is=69c54a89&hm=e3b2e9135b7ec22743020104b3be47051ac84d4188df89c139f5dffb984b784f&=&format=webp&quality=lossless&width=1214&height=680',
-    'https://media.discordapp.net/attachments/1438510824275709956/1486742161738305696/image.png?ex=69c69c09&is=69c54a89&hm=2aa5319a2f7e9525dfe9d6ce66873385eb9a8e6bf0294a01a0481dd3338cf0cd&=&format=webp&quality=lossless&width=1241&height=680',
-    'https://media.discordapp.net/attachments/1438510824275709956/1486742162459590777/image.png?ex=69c69c09&is=69c54a89&hm=74b3bdcae87ba4437df82549317217319230ca3abcbe23f419df4c4c8bcefc98&=&format=webp&quality=lossless&width=1239&height=680',
-    'https://media.discordapp.net/attachments/1438510824275709956/1486742162841534765/image.png?ex=69c69c09&is=69c54a89&hm=2ff27085fb0b7a90e26d9e4ea499a469db0fc91b6250b8864cb5b3d4b5f9bd34&=&format=webp&quality=lossless&width=1218&height=680',
-    'https://media.discordapp.net/attachments/1438510824275709956/1486742163332005948/image.png?ex=69c69c0a&is=69c54a8a&hm=ab85f0b0f6a10bc023963264ac8258e8d9cf18da87721468fd22d3d9ae63fce4&=&format=webp&quality=lossless&width=1244&height=680',
-    'https://media.discordapp.net/attachments/1438510824275709956/1486742163923406979/image.png?ex=69c69c0a&is=69c54a8a&hm=2e636243c978b05a6b32d80fe27007326e2332c3f9bed5603cd6d2c90565a46e&=&format=webp&quality=lossless&width=1239&height=680'
+    '/images/sketch-01.png',
+    '/images/sketch-02.png',
+    '/images/sketch-03.png',
+    '/images/sketch-04.png',
+    '/images/sketch-05.png',
+    '/images/sketch-06.png'
   ];
 
   return (
@@ -43,7 +43,13 @@ const Sketchbook: React.FC = () => {
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 rotate-3 scale-95 hover:rotate-0 transition-transform duration-700">
             {sketches.map((img, idx) => (
               <div key={idx} className={`sketch-border p-2 bg-white shadow-xl ${idx % 2 === 0 ? 'mt-8' : '-mt-4'} hover:-translate-y-4 transition-transform duration-500`}>
-                <img src={img} alt="sketch" className="w-full aspect-[3/4] object-cover rounded grayscale" />
+                <img
+                  src={img}
+                  alt="sketch"
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full aspect-[3/4] object-cover rounded grayscale"
+                />
               </div>
             ))}
           </div>

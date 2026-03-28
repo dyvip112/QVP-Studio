@@ -50,9 +50,12 @@ const Hero: React.FC = () => {
             <div className="relative z-10 rounded-2xl overflow-hidden shadow-[10px_10px_0px_0px_#1e40af] md:shadow-[15px_15px_0px_0px_#1e40af] border border-blue-100 transition-all duration-500 group-hover:shadow-[5px_5px_0px_0px_#1e40af]">
                <div className="max-w-md mx-auto">
                  <img 
-                   src="/images/project-quay-ve.png"
-                   alt="Poster Quay Ve" 
-                   className="w-auto h-auto object-cover grayscale-[15%] group-hover:grayscale-0 transition-all duration-1000 mx-auto"
+                   src="/images/hero-quay-ve.jpg"
+                   alt="Poster Quay Ve"
+                   loading="eager"
+                   fetchPriority="high"
+                   decoding="async"
+                   className="mx-auto h-auto w-full max-w-md object-contain grayscale-[15%] transition-all duration-1000 group-hover:grayscale-0"
                  />
                </div>
             </div>
